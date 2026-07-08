@@ -1,0 +1,45 @@
+<nav class="bg-white border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex h-16 items-center justify-between">
+
+      <!-- Logo -->
+      <%= link_to "Members Only", root_path,
+          class: "text-2xl font-bold text-gray-900" %>
+
+      <!-- Navigation -->
+      <div class="flex items-center gap-4">
+
+        <%= link_to "Home", posts_path,
+            class: "text-gray-600 hover:text-black transition" %>
+
+        <% if user_signed_in? %>
+
+          <%= link_to "New Post", new_post_path,
+              class: "text-gray-600 hover:text-black transition" %>
+
+          <span class="text-sm text-gray-500">
+            <%= current_user.email %>
+          </span>
+
+          <%= button_to "Logout",
+                destroy_user_session_path,
+                method: :delete,
+                class: "bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition" %>
+
+        <% else %>
+
+          <%= link_to "Login",
+              new_user_session_path,
+              class: "text-gray-600 hover:text-black transition" %>
+
+          <%= link_to "Sign Up",
+              new_user_registration_path,
+              class: "bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition" %>
+
+        <% end %>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
