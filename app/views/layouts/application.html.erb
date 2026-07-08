@@ -32,7 +32,10 @@
   <% if controller_name == "sessions" || controller_name == "registrations" %>
     <%= yield %>
   <% else %>
-  <%= render "posts/navbar" %>
+  <%# <% unless controller_name.in?(%w[sessions registrations passwords]) %> 
+    <%= render "posts/navbar" %>
+  <%# <% end%> 
+
     <main class="container mx-auto px-5 py-8">
       <%= yield %>
     </main>
