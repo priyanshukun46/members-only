@@ -37,15 +37,15 @@ A private posting platform built with **Ruby on Rails** where anyone can read po
 
 ### Home Page
 
-_Add screenshot here_
+![Home Page](screenshots/home.png)
 
 ### Create Post
 
-_Add screenshot here_
+![Create Post](screenshots/create-post.png)
 
 ### Login
 
-_Add screenshot here_
+![Login Page](screenshots/signup.png)
 
 ---
 
@@ -82,11 +82,7 @@ Start the server
 bin/dev
 ```
 
-Visit
 
-```
-http://localhost:3000
-```
 
 ---
 
