@@ -45,7 +45,7 @@ A private posting platform built with **Ruby on Rails** where anyone can read po
 
 ### Login
 
-![Login Page](screenshots/signup.png)
+![Signup Page](screenshots/signup.png)
 
 ---
 
